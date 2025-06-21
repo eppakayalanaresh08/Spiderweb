@@ -20,7 +20,7 @@ const EventTable: React.FC<EventTableProps> = ({ onEventClick }) => {
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
   const [currentPage, setCurrentPage] = useState(1);
 
-  const eventData: EventData[] = Array.from({ length: 7 }, (_, i) => ({
+  const eventData: EventData[] = Array.from({ length: 9 }, (_, i) => ({
     id: i + 1,
     eventName: 'Filled Name',
     eventStart: 'Jan 12, 2024',
